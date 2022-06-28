@@ -8,4 +8,4 @@
      register: df_output
 
    - debug:
-      msg: df_output.stdout_lines
+      var: df_output.stdout_lines
