@@ -1,0 +1,11 @@
+---
+- name: This is a test ansible df -h
+  hosts: all
+  tasks:
+   - name: Print df -h output
+     shell:
+      cmd: df -h
+     register: df_output
+
+   - debug:
+      msg: df_output.stdout_lines
